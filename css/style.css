@@ -81,13 +81,13 @@ figure {
   bottom: 0;
   top: 0;
   left: 0;
-  overflow-y: scroll;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
 }
 #fh5co-aside.border {
-  border-right: 1px solid #e6e6e6;
+  border-right: 3px solid #2E2D2D;
+  border-radius: 4px;
 }
 @media screen and (max-width: 1200px) {
   #fh5co-aside {
