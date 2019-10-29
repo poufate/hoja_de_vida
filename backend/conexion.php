@@ -1,7 +1,7 @@
 <?php
 class conexion{
   private $host="localhost";
-  private $dbname="hoja_de_vida";
+  private $dbname="hoja de vida";
   private $user="root";
   private $pass="";
   private $conexion=null;
@@ -21,3 +21,4 @@ class conexion{
     }
   }
 }
+?>
