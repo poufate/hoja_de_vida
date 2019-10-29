@@ -1,8 +1,6 @@
 
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 	<head>
 	<meta charset="utf-8">
@@ -48,20 +46,20 @@
 		<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
 		<aside id="fh5co-aside" role="complementary" class="border js-fullheight">
 				<!-- el logo debe estar en 112px X 112px -->
-			<h1 id="fh5co-logo"><a href="index.html"><img src="images/logo.png" width="112px" height="112px"></a></h1>
+			<h1 id="fh5co-logo"><a href="panel.html"><img src="images/logo.png" width="112px" height="112px"></a></h1>
 			<nav id="fh5co-main-menu" role="navigation">
 				<ul>
-					<li class="fh5co-active"><a href="index.html">Home</a></li>
+					<li class="fh5co-active"><a href="panel.html">Home</a></li>
 					
 					<li><a href="editar.html">acerca de</a></li>
-					<li><a href="editar.html">editar</a></li>
+			
 
 				</ul>
 			</nav>
 
 			<div class="fh5co-footer">
 
-				<a href="#">cerrar sesión</a>
+				<a href="index.html">cerrar sesión</a>
 				<br>	
 				<p>todos los derechos reservados</p>
 			</div>
@@ -77,7 +75,7 @@
 					
 					<!-- esta casilla debe siempre ir al final, aporta la posibilidad de abrir crear una nueva casilla, posiblemente crea una interfaz flotante sobre la misma pagina para tal funcion. -->
 					<div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 work-item" id="agrear_infoAcademica">
-						<a href="añadirEstudio.php">
+						<a id="anadir">
 							<img src="images/nueva_entrada.jpg"  class="img-responsive">
 							<h3 class="fh5co-work-title">Añadir  entrada</h3>
 							<p>-----------</p>
@@ -87,117 +85,66 @@
 					
 				</div>
 			</div>
-			
 			<div class="fh5co-narrow-content">
 				<h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft">Experiencia<span>Laboral</span></h2>
 				<div class="row animate-box" data-animate-effect="fadeInLeft">
 
-					<!-- esta es una casilla -->
-
-					<div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 work-item" id="-dependiendo del elemento en la base de datos-">
-						<a href="work.html">
-							<!-- las imagenes deben estar en 470 px horizontales y 320px vericales -->
-							<img src="images/work_1.jpg" class="img-responsive">
-							<h3 class="fh5co-work-title">Titulo del c...</h3>
-							<!-- establece el titulo de  limitar a cantidad de caracteres, tal vez 15 -->
-							<p>institucion y fecha lajsdlajsdljlaskdj</p>
-							<!-- limitar a cantidad de caracteres, tal vez 50 -->
-							
-						</a>
-					</div>
-					<!-- este es el fin de una casilla -->
-					
-					<!-- esta casilla debe siempre ir al final, aporta la posibilidad de abrir crear una nueva casilla, posiblemente crea una interfaz flotante sobre la misma pagina para tal funcion. -->
-					<div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 work-item">
+					<div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 work-item" id="agregar_exp">
 						<a href="añadirExperiencia.php">
 							<img src="images/nueva_entrada.jpg"  class="img-responsive">
 							<h3 class="fh5co-work-title">Añadir  entrada</h3>
 							<p>---------------</p>
 						</a>
 					</div>
-					<
+		
 					
 				</div>
 			</div>
-			<!-- esta sección contiene una (tal vez mas) frase personal o cita celebre importante o relevante, puede o no existir-->
-			<div class="fh5co-testimonial" >
-				<div class="fh5co-narrow-content">
-					<div class="owl-carousel-fullwidth animate-box" data-animate-effect="fadeInLeft">
-		            <div class="item">
-		            	<figure>
-		            		<img src="images/testimonial_person2.jpg" >
-		            	</figure>
-		              	<p class="text-center quote">&ldquo;la vida te da limones, pero nadie te pregunta si te gustan las limonadas. &rdquo; <cite class="author">&mdash; el de la esquina</cite></p>
-		            </div>
-		            <div class="item">
-		            	<figure>
-		            		<img src="images/EL PARACO HP.jpg" >
-		            	</figure>
-		              	<p class="text-center quote">&ldquo;Nunca pensé que mi amor a Colombia me creara estas dificultades judiciales &rdquo;<cite class="author">&mdash;el paraco HP</cite></p>
-		            </div>
+			
+
+		
 		            
 		          </div>
 				</div>
 			</div>
 <!--posiblemente no se agrege, es opcional-->
 
-			<div class="fh5co-narrow-content">
-				<h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft">Habilidades y Actitudes</h2>
-				<div class="row">
-					<div class="col-md-6">
-						<div class="fh5co-feature animate-box" data-animate-effect="fadeInLeft">
-							<div class="fh5co-icon">
-								<i class="icon-strategy"></i>
-							</div>
-							<div class="fh5co-text">
-								<h3>Strategy</h3>
-								<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6">
-						<div class="fh5co-feature animate-box" data-animate-effect="fadeInLeft">
-							<div class="fh5co-icon">
-								<i class="icon-telescope"></i>
-							</div>
-							<div class="fh5co-text">
-								<h3>Explore</h3>
-								<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-md-6">
-						<div class="fh5co-feature animate-box" data-animate-effect="fadeInLeft">
-							<div class="fh5co-icon">
-								<i class="icon-circle-compass"></i>
-							</div>
-							<div class="fh5co-text">
-								<h3>Direction</h3>
-								<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6">
-						<div class="fh5co-feature animate-box" data-animate-effect="fadeInLeft">
-							<div class="fh5co-icon">
-								<i class="icon-tools-2"></i>
-							</div>
-							<div class="fh5co-text">
-								<h3>Expertise</h3>
-								<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-							</div>
-						</div>
-					</div>
-
-				</div>
-			</div>
+			
 			
 
 		
 
 		</div>
 	</div>
+	   <script type="module" src="js/index.js"></script>
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Carousel -->
+	<script src="js/owl.carousel.min.js"></script>
+	<!-- Stellar -->
+	<script src="js/jquery.stellar.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Counters -->
+	<script src="js/jquery.countTo.js"></script>
+	
+	
+	<!-- MAIN JS -->
+	<script src="js/main.js"></script>
+
+
+
+
+
+
+
+
+
+	
 	   <script type="module" src="js/index.js"></script>
 	<!-- jQuery -->
 	<script src="js/jquery.min.js"></script>

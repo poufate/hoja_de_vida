@@ -1,15 +1,17 @@
 
-export class infoAcademica{
-constructor(id,nombre,insti,progra,fechaini,fechafin,pais,depar,ciud){
+export class infoLaboral{
+constructor(id,fechaini,fechafin,ciud,empresa_nombre,sector,pais,depar){
 	this.id=id;
-	this.nombre_titulo=nombre;
-	this.institucion=insti;
-	this.programa=progra;
 	this.fecha_inicio=fechaini;
 	this.fecha_fin=fechafin;
+	this.ciudad=ciud;
+	this.empresa=empresa_nombre;
+	this.sector=sector;
 	this.pais=pais;
 	this.departamento=depar;
-	this.ciudad=ciud;
+	
+	
+	
 }
 
 //Categoria
@@ -19,24 +21,20 @@ return this.id;
  setId(id){
 this.id=id;
 }
- getNombre_titulo(){
-return this.nombre_titulo;
+
+ getEmpresa(){
+return this.empresa;
 }
- setNombre_titulo(nomb){
-this.nombre_titulo=nomb;
-}
- getInstitucion(){
-return this.institucion;
-}
- setInstitucion(nomb){
-this.institucion=nomb;
+ setEmpresa(nomb){
+this.empresa=nomb;
 }
 
- getPrograma(){
-return this.programa;
+
+ getSector(){
+return this.sector;
 }
- setPrograma(nomb){
-this.programa=nomb;
+ setSector(nomb){
+this.sector=nomb;
 }
 
  getFecha_inicio(){
@@ -46,10 +44,10 @@ return this.fecha_inicio;
 this.fecha_inicio=nomb;
 }
 
- getFecha_fin(){
+ getFecha_inicio(){
 return this.fecha_fin;
 }
- setFecha_fin(nomb){
+ setFecha_inicio(nomb){
 this.fecha_fin=nomb;
 }
 
@@ -75,7 +73,7 @@ this.departamento=dep;
 return this.ciudad;
 }
  setCiudad(ciudades){
-this.ciudad=ciudades;
+this.ciudad=ciudad;
 }
 
 }
