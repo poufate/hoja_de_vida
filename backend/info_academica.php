@@ -4,7 +4,7 @@ require_once("conexion.php");
 function informacionAcademica($correo){
 	$conexion=new conexion();
 	$cnn=$conexion->getConexion();
-	$sql="SELECT estudio.id,estudio.Nombre_titulo,estudio.fechaini,estudio.Institucion,estudio.programa_uso,estudio.ciudad,estudio.departamento,estudio.pais FROM estudio INNER JOIN super_usuario ON super_usuario.id=estudio.id_estudio_usuario WHERE super_usuario.email=:email";
+	$sql="SELECT estudio.id,estudio.Nombre_titulo,estudio.fechaini,estudio.fecha_fin,estudio.Institucion,estudio.programa_uso,estudio.ciudad,estudio.departamento,estudio.pais FROM estudio INNER JOIN super_usuario ON super_usuario.id=estudio.id_estudio_usuario WHERE super_usuario.email=:email";
 	$statement=$cnn->prepare($sql);
 	$statement->bindParam(':email', $correo, PDO::PARAM_STR);
 	$valor=$statement->execute();
@@ -17,9 +17,10 @@ function informacionAcademica($correo){
 		    $hoja_vida["estudios"][]=$row['Institucion'];
 		    $hoja_vida["estudios"][]=$row['programa_uso'];
 		    $hoja_vida["estudios"][]=$row['fechaini'];
-		    $hoja_vida["estudios"][]=$row['ciudad'];
-		    $hoja_vida["estudios"][]=$row['departamento'];
+		    $hoja_vida["estudios"][]=$row['fecha_fin'];
 		    $hoja_vida["estudios"][]=$row['pais'];
+		    $hoja_vida["estudios"][]=$row['departamento'];
+		    $hoja_vida["estudios"][]=$row['ciudad'];
 		    array_push($estudios, $hoja_vida);
 		    unset($hoja_vida);
 		}
