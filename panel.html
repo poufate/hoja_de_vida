@@ -37,6 +37,13 @@
 
 	</head>
 	<body>
+		<div class="modal fade bd-example-modal-lg" id="modal-infoAcademica" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content" id="contenido_academico">
+
+    </div>
+  </div>
+</div>
 	<div id="fh5co-page">
 		<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
 		<aside id="fh5co-aside" role="complementary" class="border js-fullheight">
@@ -64,15 +71,12 @@
 		<div id="fh5co-main">
 			<div class="fh5co-narrow-content">
 				<h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft">Información <span>Académica</span></h2>
-				<div class="row animate-box" data-animate-effect="fadeInLeft">
-
-					<!-- esta es una casilla -->
-
+				<div class="row animate-box" data-animate-effect="fadeInLeft" id="info_academico">
 
 					<!-- este es el fin de una casilla -->
 					
 					<!-- esta casilla debe siempre ir al final, aporta la posibilidad de abrir crear una nueva casilla, posiblemente crea una interfaz flotante sobre la misma pagina para tal funcion. -->
-					<div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 work-item">
+					<div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 work-item" id="agrear_infoAcademica">
 						<a href="añadirEstudio.php">
 							<img src="images/nueva_entrada.jpg"  class="img-responsive">
 							<h3 class="fh5co-work-title">Añadir  entrada</h3>
